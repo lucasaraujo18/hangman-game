@@ -1,3 +1,24 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --app-link: #61dafb;
+  --bg-navbar: #02485b;
+  --shadow-card: rgba(0, 255, 255, 0.7);
+}
+
+:root {
+	--font-menus: 1.125rem;
+	--font-icon-navbar: 1.875rem;
+	--font-size-10: 0.625rem;
+	--font-size-11: 0.688rem;
+	--font-size-12: 0.75rem;
+	--font-size-14: 0.875rem;
+	--font-size-16: 1rem;
+	--font-size-18: 1.125rem;
+	--font-size-20: 1.25rem;
+	--margin-test: 800px;
+}
+
 .App {
   text-align: center;
 }
