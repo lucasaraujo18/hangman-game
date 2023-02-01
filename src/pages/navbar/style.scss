@@ -1,0 +1,40 @@
+.nav-bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: #02485b;
+
+    .nav-bar ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    
+    .nav-bar li {
+        list-style: none;
+        color: #fff;
+        margin: 0px 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .nav-bar li::after {
+        content: '';
+        width: 0px;
+        height: 1px;
+        display: block;
+        background: #fff;
+        transition: 600ms;
+    }
+    
+    .nav-bar li:hover::after {
+        width: 100%;
+    }
+}
+
+.nav-bar-logo {
+    height: 10vmin;
+    pointer-events: none;
+}
