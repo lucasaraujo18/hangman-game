@@ -4,10 +4,9 @@ import Form from "react-bootstrap/Form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { Alert } from "react-bootstrap";
+import { HangmanImages } from "../images";
 
-import { HangmanImages } from "./Images";
-
-export function Play(props) {
+export function Play(props: any) {
     const [life, setLife] = useState(6);
     const [letters, setLetters] = useState([]);
     const [currentLetter, setCurrentLetter] = useState("");
@@ -17,7 +16,7 @@ export function Play(props) {
 
     let [wrongLetters, setWrongLetters] = useState([]);
 
-    const verifyWord = (letter) => {
+    const verifyWord = (letter: any) => {
         const secretWord = "cantor";
         return secretWord.indexOf(letter);
     };
@@ -42,20 +41,20 @@ export function Play(props) {
             const resultVerifyWorld = verifyWord(currentLetter);
             if (resultVerifyWorld === -1) {
                 setLife(life - 1);
-                setWrongLetters([...wrongLetters, currentLetter]);
+                // setWrongLetters([...wrongLetters, currentLetter]);
             } else {
                 let holdLetter = letters;
-                holdLetter[resultVerifyWorld] = currentLetter;
+                // holdLetter[resultVerifyWorld] = currentLetter;
                 setLetters([...holdLetter]);
             }
-            setIsWinner(verifyIsWinner());
+            //  setIsWinner(verifyIsWinner());
             setCurrentLetter("");
         }
     };
 
     const newGame = () => {
         newWord();
-        setLetters([...Array(game.qtdLetters).fill("_ ")]);
+        // setLetters([...Array(game.qtdLetters).fill("_ ")]);
         setLife(6);
         setWrongLetters([]);
         setShow(false);
@@ -63,7 +62,7 @@ export function Play(props) {
     };
 
     const verifyIsWinner = () => {
-        return !letters.includes("_ ");
+        //return !letters.includes("_ ");
     };
 
     let icon = isWinner
@@ -76,7 +75,7 @@ export function Play(props) {
 
     useEffect(() => {
         const { qtdLetters } = newWord();
-        setLetters([...Array(qtdLetters).fill("_ ")]);
+        // setLetters([...Array(qtdLetters).fill("_ ")]);
     }, []);
 
     return (
@@ -92,7 +91,7 @@ export function Play(props) {
                             {life}
                         </span>
                     </p>
-                    <h3>Tema: {game.theme}</h3>
+                    {/*  <h3>Tema: {game.theme}</h3> */}
                     <p>{letters}</p>
                     <Alert
                         show={viewAlert}
