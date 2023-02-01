@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "../public/logo.png";
+import logo from "../../assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid, brands } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { Outlet, Link } from "react-router-dom";
 
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
-import "../components/App.css";
+import "./style.scss";
 
 export function NavbarHang() {
     return (
