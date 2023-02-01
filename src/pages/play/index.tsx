@@ -83,7 +83,7 @@ export function Play(props: any) {
 
     return (
         <div className="App">
-            <div className="Play-content">
+            <div className="play-content">
                 <div className="text-white">
                     <h1>
                         {props.title} <FontAwesomeIcon icon={icon} />

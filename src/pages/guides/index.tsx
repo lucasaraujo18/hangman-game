@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 import "./style.scss";
-import "../../App.scss";
 
 export function GuidesComponent() {
     return (
@@ -13,7 +12,7 @@ export function GuidesComponent() {
                 <div className="App-header">
                     <div className="d-flex">
                         <Link to="play" className="text-white">
-                            <div className="Card-guides">
+                            <div className="card-guides">
                                 <h1>
                                     Jogar{" "}
                                     <FontAwesomeIcon icon={solid("play")} />
@@ -21,14 +20,14 @@ export function GuidesComponent() {
                                 <p>Venha jogar forca no nosso sistema</p>
                             </div>
                         </Link>
-                        <div className="Card-guides">
+                        <div className="card-guides">
                             <h1>
                                 Biblioteca{" "}
                                 <FontAwesomeIcon icon={solid("book-reader")} />
                             </h1>
                             <p>Venha ver todas as palavras do nosso sistema</p>
                         </div>
-                        <div className="Card-guides">
+                        <div className="card-guides">
                             <h1>
                                 Cadastrar{" "}
                                 <FontAwesomeIcon icon={solid("plus")} />

@@ -6,18 +6,17 @@ import { Outlet, Link } from "react-router-dom";
 
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "./style.scss";
-import "../../App.scss";
 
 export function NavbarHang() {
     return (
         <>
-            <div className="Nav-bar d-flex justify-content-between">
+            <div className="nav-bar d-flex justify-content-between">
                 <ul>
                     <Link to="/">
                         <li>
                             <img
                                 src={logo}
-                                className="Nav-bar-logo"
+                                className="nav-bar-logo"
                                 alt="logo"
                             />
                         </li>
