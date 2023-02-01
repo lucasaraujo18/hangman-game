@@ -1,11 +1,13 @@
 import React from "react";
-import hangman_6 from "../public/hangman-icon/hangman-6.png";
-import hangman_5 from "../public/hangman-icon/hangman-5.png";
-import hangman_4 from "../public/hangman-icon/hangman-4.png";
-import hangman_3 from "../public/hangman-icon/hangman-3.png";
-import hangman_2 from "../public/hangman-icon/hangman-2.png";
-import hangman_1 from "../public/hangman-icon/hangman-1.png";
-import hangman_0 from "../public/hangman-icon/hangman-0.png";
+import hangman_6 from "../../assets/hangman/hangman-6.png";
+import hangman_5 from "../../assets/hangman/hangman-5.png";
+import hangman_4 from "../../assets/hangman/hangman-4.png";
+import hangman_3 from "../../assets/hangman/hangman-3.png";
+import hangman_2 from "../../assets/hangman/hangman-2.png";
+import hangman_1 from "../../assets/hangman/hangman-1.png";
+import hangman_0 from "../../assets/hangman/hangman-0.png";
+
+import "./style.scss";
 
 export function HangmanImages(lifes: number) {
     let hangman;
@@ -35,7 +37,7 @@ export function HangmanImages(lifes: number) {
 
     return (
         <div>
-            <img src={hangman} className="Hangman-image" alt="logo" />
+            <img src={hangman} className="hangman-image" alt="logo" />
         </div>
     );
 }
