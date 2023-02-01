@@ -1,0 +1,27 @@
+.card-guides {
+    border: 1px solid var(--white-color);
+    border-radius: 15px;
+    margin: 0 20px;
+    width: 350px;
+}
+
+.card-guides:hover {
+    transform: translateY(-5px);
+    border: 1px solid var(--shadow-card);
+    box-shadow: 0px 5px 10px 0px var(--shadow-card);
+    cursor: pointer;
+    transition: all ease 0.2s;
+    color: var(--shadow-card);
+}
+
+.card-guides h1 {
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+}
+
+.card-guides p {
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
