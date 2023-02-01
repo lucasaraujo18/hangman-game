@@ -3,6 +3,9 @@ import { Outlet, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 
+import "./style.scss";
+import "../../App.scss";
+
 export function GuidesComponent() {
     return (
         <>

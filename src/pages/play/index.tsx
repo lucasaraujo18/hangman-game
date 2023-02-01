@@ -6,6 +6,9 @@ import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { Alert } from "react-bootstrap";
 import { HangmanImages } from "../images";
 
+import "./style.scss";
+import "../../App.scss";
+
 export function Play(props: any) {
     const [life, setLife] = useState(6);
     const [letters, setLetters] = useState([]);

@@ -6,6 +6,7 @@ import { Outlet, Link } from "react-router-dom";
 
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "./style.scss";
+import "../../App.scss";
 
 export function NavbarHang() {
     return (

@@ -7,6 +7,9 @@ import hangman_2 from "../../assets/hangman/hangman-2.png";
 import hangman_1 from "../../assets/hangman/hangman-1.png";
 import hangman_0 from "../../assets/hangman/hangman-0.png";
 
+import "./style.scss";
+import "../../App.scss";
+
 export function HangmanImages(lifes: number) {
     let hangman;
 
